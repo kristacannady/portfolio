@@ -38,6 +38,7 @@ text-shadow: none;
   font-size: 36px;
   color: white;
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  text-align: center;
   }
 
   * {
@@ -64,7 +65,14 @@ text-shadow: none;
   }
 
   /* Projects Section */
+  
+  .Projects{
+    background-color: var(--primary-color);
+  }
 
   /* Contact Me Section */
-
-  /* Resume Section */
+  .contact-info {
+    background: var(--tertiary-color);
+    text-align: center;
+    font-size: larger;
+  }
