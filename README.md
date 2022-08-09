@@ -9,7 +9,7 @@ This website shows my professional portfolio and completed projects.
 * CSS
 
 ## Website
-https://lernantino.github.io/run-buddy/
+https://kristacannady.github.io/portfolio/
 
 ## Contribution
 Made with ❤️ by Krista Cannady
