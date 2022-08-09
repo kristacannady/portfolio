@@ -12,13 +12,14 @@ header {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   font-style: italic;
   color: #f2f2f2;
   position: -webkit-sticky;
   position: sticky;
   top: 0;
+  z-index: 999;
 }
 
 .topnav a {
@@ -61,34 +62,85 @@ h2 {
 }
 
 .large-profile {
-  background: url('./Headshot.jpg');
+  background: url("./Headshot.jpg");
   background-size: cover;
   background-position: center;
+  opacity: 0.6;
+  transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -webkit-transition: opacity 1s ease-in-out;
+}
+
+.large-profile:hover {
+  opacity: 1;
+  transition: opacity 0.55s ease-in-out;
+  -moz-transition: opacity 0.55s ease-in-out;
+  -webkit-transition: opacity 0.55s ease-in-out;
 }
 
 /* Projects Section */
 
-.projects.links {
+.Projects {
+  background: var(--secondary-color);
+}
+
+/* Run Buddy Image */
+.center {
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
 
-.run-buddy {
+​.run-buddy-text {
   position: absolute;
-
+  top: 115%;
+  left: 30%;
+  background-color: var(--primary-color);
+  opacity: 0.5;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
-.surf {
+/* Surf Image */
+.left {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
+
+.surf-text {
   position: absolute;
+  top: 190%;
+  left: 35%;
+  background-color: var(--primary-color);
+  opacity: 0.5;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
-.led {
+/* LED Image */
+
+.right {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+}
+
+.LED-text {
   position: absolute;
+  top: 230%;
+  left: 40%;
+  background-color: var(--primary-color);
+  opacity: 0.5;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
 }
-
-/* position element - relative on the parent and absolute on the child for text
-  inside of the run buddy photo. set left and right to tell it where to be relative to it's parent */
 
 /* Contact Me Section */
 .contact-info {
