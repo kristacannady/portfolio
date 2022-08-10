@@ -82,6 +82,7 @@ h2 {
 
 .Projects {
   background: var(--secondary-color);
+  position: static;
 }
 
 /* Run Buddy Image */
