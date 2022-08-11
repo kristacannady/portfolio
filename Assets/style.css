@@ -16,8 +16,6 @@ header {
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   font-style: italic;
   color: #f2f2f2;
-  position: -webkit-sticky;
-  position: sticky;
   top: 0;
   z-index: 999;
 }
@@ -41,10 +39,6 @@ h2 {
   color: white;
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   text-align: center;
-}
-
-* {
-  box-sizing: border-box;
 }
 
 .column-2 {
@@ -82,66 +76,69 @@ h2 {
 
 .Projects {
   background: var(--secondary-color);
-  position: static;
+  }
+
+.all-proj {
+  display: flex;
+  flex-direction: column;
+    font-weight: bold;
+    margin: 0;
+    color: white;
+    /* text-align: center; */
+}
+#second-section {
+  display: flex;
+  flex-wrap: wrap;
 }
 
+#second-section div {
+  padding: 0 1% 0 1%;
+
+}
+
+
 /* Run Buddy Image */
-.center {
+/* .center {
   display: flex;
   margin-left: auto;
   margin-right: auto;
   width: 50%;
+} */
+.container {
+  position: relative;
 }
-
-.run-buddy-text {
+.text {
   position: absolute;
-  top: 115%;
-  left: 30%;
+  bottom: 40%;
   background-color: var(--primary-color);
   opacity: 0.5;
   color: white;
   padding-left: 20px;
   padding-right: 20px;
+  width: 15%;
 }
 
+
 /* Surf Image */
-.left {
+/* .left {
   display: flex;
   margin-left: auto;
   margin-right: auto;
   width: 40%;
 }
 
-.surf-text {
-  position: absolute;
-  top: 190%;
-  left: 35%;
-  background-color: var(--primary-color);
-  opacity: 0.5;
-  color: white;
-  padding-left: 20px;
-  padding-right: 20px;
-}
+
 
 /* LED Image */
 
-.right {
+/* .right {
   display: flex;
   margin-left: auto;
   margin-right: auto;
   width: 30%;
-}
+} */
 
-.LED-text {
-  position: absolute;
-  top: 230%;
-  left: 40%;
-  background-color: var(--primary-color);
-  opacity: 0.5;
-  color: white;
-  padding-left: 20px;
-  padding-right: 20px;
-}
+
 
 /* Contact Me Section */
 .contact-info {
@@ -150,19 +147,26 @@ h2 {
   font-size: larger;
 }
 
+#About-Me {
+  display: flex;
+  flex-wrap: wrap;
+  background: var(--secondary-color);
+}
+
+
 /* Responsive to other Media Types */
 
-@media screen and (max-width: 980px)
+@media screen and (max-width: 980px) {
   header {
     padding-bottom: 0;
     justify-content: center;
     position: relative;
   }
+}
 
-@media screen and (max-width: 768px) 
+@media screen and (max-width: 768px) {
 
     section {
       padding: 30px 15px;
     }
-
-@media screen and (max-width: 575px)
+  }
